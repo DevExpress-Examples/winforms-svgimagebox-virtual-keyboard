@@ -15,7 +15,7 @@ First, we've prepared an SVG file ([keys.svg](https://github.com/DevExpress-Exam
 <svg>
   <defs>
     <g id="key">
-	 ... some visual representation here
+	  ...
           <path ... />
           <text x="25" text-anchor="middle" y="17" fill="#41719C" font-size="10pt" font-family="Calibri">
             <tspan id="txt" x="25" dy="12.5">[key]</tspan>
@@ -32,7 +32,7 @@ First, we've prepared an SVG file ([keys.svg](https://github.com/DevExpress-Exam
 
 ```
 
-After the file is loaded to the [SvgImageBox](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SvgImageBox) control, the code iterates through SVG items, sets item text, and customizes the appearance settings related to the item hover and pressed states.
+After the file is loaded to the [SvgImageBox](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SvgImageBox) control, the code iterates through SVG items, sets item text and ids, and then customizes the appearance settings related to the item hover and pressed states.
 
 ```cs
 keysGroup = svgImageBox1.FindItemById("keys");
