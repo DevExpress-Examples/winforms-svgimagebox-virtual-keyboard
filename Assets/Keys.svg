@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg width="230" height="230" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <g id="key">
+      <path d="M0, 5A5 5 0 0 1 5, 0L45, 0A5 5 0 0 1 50, 5L50, 45A5 5 0 0 1 45, 50L5, 50A5 5 0 0 1 0, 45z" 
+            fill="#FFFFFF" stroke="#41719C" fill-rule="evenodd" />
+      <text x="25" text-anchor="middle" y="17" fill="#41719C" font-size="10pt" font-family="Calibri">
+        <tspan id="txt" x="25" dy="12.5">[key]</tspan>
+      </text>
+    </g>
+  </defs>
+  <g id="keys">
+    <use id="7" href="#key" transform="matrix(1, 0, 0, 1, 30, 30)"/>
+    <use id="8" href="#key" transform="matrix(1, 0, 0, 1, 90, 30)"/>
+    <use id="9" href="#key" transform="matrix(1, 0, 0, 1, 150, 30)"/>
+    <use id="4" href="#key" transform="matrix(1, 0, 0, 1, 30, 90)"/>
+    <use id="5" href="#key" transform="matrix(1, 0, 0, 1, 90, 90)"/>
+    <use id="6" href="#key" transform="matrix(1, 0, 0, 1, 150, 90)"/>
+    <use id="1" href="#key" transform="matrix(1, 0, 0, 1, 30, 150)"/>
+    <use id="2" href="#key" transform="matrix(1, 0, 0, 1, 90, 150)"/>
+    <use id="3" href="#key" transform="matrix(1, 0, 0, 1, 150, 150)"/>
+  </g>
+</svg>
