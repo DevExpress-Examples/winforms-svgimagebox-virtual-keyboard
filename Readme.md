@@ -14,7 +14,7 @@
 
 This example gives you an idea of how to create a virtual keyboard based on the [SvgImageBox](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SvgImageBox) control. 
 
-First, we've prepared an SVG file ([keys.svg](https://github.com/DevExpress-Examples/SvgImageBox-Virtual-keyboard-from-SVG-file/blob/21.1.4%2B/Assets/Keys.svg)) that defines the button layout and styling options for our virtual keyboard.
+First, we've prepared an SVG file ([keys.svg](./Assets/Keys.svg)) that defines the button layout and styling options for our virtual keyboard.
 
 ```svg
 <svg>
