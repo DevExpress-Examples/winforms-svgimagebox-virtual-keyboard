@@ -3,16 +3,13 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1009309)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-*Files to look at*:
 
-* [NumPadForm.cs](./CS/NumPadForm.cs) (VB: [NumPadForm.vb](./VB/NumPadForm.vb))
 
-<!-- default file list end -->
-# SvgImageBox – Virtual keyboard from SVG file
+# WinForms SvgImageBox – Virtual keyboard from SVG file
 
 ![numpad.png](./Assets/numpad.png)]
 
-This example gives you an idea of how to create a virtual keyboard based on the [SvgImageBox](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SvgImageBox) control. 
+This example shows how to create a virtual keyboard based on the [SvgImageBox](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SvgImageBox) control. 
 
 First, we've prepared an SVG file ([keys.svg](./Assets/Keys.svg)) that defines the button layout and styling options for our virtual keyboard.
 
@@ -50,10 +47,12 @@ foreach(var key in keysGroup.Items) {
     key.Appearance.Pressed.FillColor = DXSkinColors.IconColors.Black;
 }
 ```
-Related links: [SvgImageBox.FindItemById](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SvgImageBox.FindItemById(System.String)), [SvgImageItem.FindDescendantById](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SvgImageItem.FindDescendantById(System.String))
+Related links:
 
-The example then handles the [SvgImageBox.ItemPress](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SvgImageBox.ItemPress) event
-to emulate a virtual keyboard:
+* [SvgImageBox.FindItemById](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SvgImageBox.FindItemById(System.String))
+* [SvgImageItem.FindDescendantById](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SvgImageItem.FindDescendantById(System.String))
+
+The example then handles the [SvgImageBox.ItemPress](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.SvgImageBox.ItemPress) event to emulate a virtual keyboard:
 
 ```cs
 void OnItemPress(object sender, SvgImageItemEventArgs e) {
@@ -62,5 +61,9 @@ void OnItemPress(object sender, SvgImageItemEventArgs e) {
 }
 ```
 
-Use this example as a template for your custom applications (for instance, POS terminals) where you set up a layout of controls in an SVG file and then use the SvgImageBox control to handle clicks on individual items.
+Use this example as a template for your applications (for instance, POS terminals) where you set up a layout of controls in an SVG file and then use the `SvgImageBox` control to handle clicks on individual items.
 
+
+## Files to Review
+
+* [NumPadForm.cs](./CS/NumPadForm.cs) (VB: [NumPadForm.vb](./VB/NumPadForm.vb))
